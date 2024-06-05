@@ -3,11 +3,12 @@ const count = 8;
 const rows = [];
 
 //practicing functions
-function padRow() {
-
+function padRow(name) {
+const test = "Testing";
+return character + name ;
 }
-
-const call = padRow();
+//here when calling padrow the variable name has been replaced with an actual name. It will hence show #CamperChan in the console log
+const call = padRow("CamperChan");
 
 //practicing for loops
 for (let i = 0; i < count; i = i + 1) {
