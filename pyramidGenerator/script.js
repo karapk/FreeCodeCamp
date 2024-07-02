@@ -27,10 +27,15 @@ since we lost a row while starting at 1 an <= operator has been added to fix thi
 
 // }
 
-let continueLoop = false;
+//using a while loop
 let done = 0;
 
-while (done !== count) {
+// while (done !== count) {
+//     done++
+//     rows.push(padRow(done, count));
+// }
+//changing if done is less than or equal to count
+while (done <= count) {
     done++
     rows.push(padRow(done, count));
 }
