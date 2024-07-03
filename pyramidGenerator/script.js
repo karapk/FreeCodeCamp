@@ -40,6 +40,12 @@ while (done <= count) {
     rows.push(padRow(done, count));
 }
 
+while (rows.length <= count) {
+    done++
+    rows.push(padRow(done, count));
+}
+
+
 let result = ""
 
 for (const row of rows) {
