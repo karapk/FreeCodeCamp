@@ -20,22 +20,23 @@ function padRow(rowNumber, rowCount) {
 // }
 //shift and unshift 
 
-const numbers = [1, 2, 3,];
+/*const numbers = [1, 2, 3,];
 const shifted = numbers.shift();
 console.log(shifted);
 const unshifted = numbers.unshift(5);
 console.log(unshifted);
 console.log(numbers);
-
+*/
 
 
 /*using the increment operator ++ for the same code to make it even more shorthand
 Changed i to start at one hence didn't need to do i+1
 since we lost a row while starting at 1 an <= operator has been added to fix this*/
-// for (let i = 1; i <= count; i ++) {
-//     rows.push(padRow(i, count));
 
-// }
+for (let i = 1; i <= count; i ++) {
+    rows.unshift(padRow(i, count));
+
+}
 
 //using for loop to creat upside down pyramid
 // for (let i = count; i > 0; i--) {
