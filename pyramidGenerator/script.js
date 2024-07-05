@@ -27,8 +27,13 @@ since we lost a row while starting at 1 an <= operator has been added to fix thi
 
 // }
 
+//using for loop to creat upside down pyramid
+for (let i = count; i > 0; i--) {
+    rows.push(padRow(i, count));
+}
+
 //using a while loop
-let done = 0;
+// let done = 0;
 
 // while (done !== count) {
 //     done++
@@ -40,10 +45,9 @@ let done = 0;
 //     rows.push(padRow(done, count));
 // }
 
-while (rows.length < count) {
-    done++
-    rows.push(padRow(rows.length+1, count));
-}
+// while (rows.length < count) {
+//     rows.push(padRow(rows.length+1, count));
+// }
 
 
 let result = ""
