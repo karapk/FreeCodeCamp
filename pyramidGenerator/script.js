@@ -35,14 +35,14 @@ let done = 0;
 //     rows.push(padRow(done, count));
 // }
 //changing if done is less than or equal to count
-while (done <= count) {
-    done++
-    rows.push(padRow(done, count));
-}
+// while (done <= count) {
+//     done++
+//     rows.push(padRow(done, count));
+// }
 
-while (rows.length <= count) {
+while (rows.length < count) {
     done++
-    rows.push(padRow(done, count));
+    rows.push(padRow(rows.length+1, count));
 }
 
 
