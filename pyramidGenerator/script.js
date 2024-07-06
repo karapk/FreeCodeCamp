@@ -1,6 +1,7 @@
-const character = "#";
-const count = 8;
+const character = "v";
+const count = 10;
 const rows = [];
+let inverted = false;
 
 //practicing functions
 function padRow(rowNumber, rowCount) {
@@ -34,8 +35,11 @@ Changed i to start at one hence didn't need to do i+1
 since we lost a row while starting at 1 an <= operator has been added to fix this*/
 
 for (let i = 1; i <= count; i ++) {
-    rows.unshift(padRow(i, count));
-
+if (inverted) {
+rows.unshift(padRow(i, count));
+} else {
+    rows.push(padRow(i, count)); 
+}
 }
 
 //using for loop to creat upside down pyramid
